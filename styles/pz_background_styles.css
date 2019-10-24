@@ -1,28 +1,31 @@
 /* BACKGROUND DISPLAY
     - diplays background as a grid element */
+li.background-image{
+    list-style-type: none;
+}
 @media(min-width: 900px){
-    .background-container-left{
+    .background-container{
         display: grid;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-gap: 5px;
+        grid-template-columns: 1fr 1fr;
         z-index: -100;
         opacity: .5;
+        margin-top: 35%;
+        width: 100%;
+        height: auto;
     }
     .background-image{
         background: url("../assets/background.png");
         background-repeat: no-repeat;
         display: grid;
         grid-auto-columns: 1fr 1fr;
-        background-repeat: no-repeat space;
+        background-repeat: no-repeat; 
     }
     .background-image:nth-child(odd){
-        background-position: left center;
+        background-position: center top;
     }
     .background-image:nth-child(even){
-        background-position: right center;
-    }
-    li.background-image{
-        list-style-type: none;
+        background-position: left center;
+        margin-top: 50%;
     }
 }
        

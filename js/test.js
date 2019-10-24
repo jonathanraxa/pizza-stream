@@ -1,4 +1,7 @@
-
+/* 
+    quick script used to test 
+    overall functionality of the webpage
+*/
 window.onload = () => {
 
     (function() {

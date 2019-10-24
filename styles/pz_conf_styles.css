@@ -1,3 +1,5 @@
+/* All styles within the container element, 
+    excludes the background image  */
 /* --- LOGO SECTION --- */
 .logo--cont{background-color: #F6F5AE;}
 .logo--cont img{margin: 1em;}
