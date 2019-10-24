@@ -1,0 +1,68 @@
+/* --- LOGO SECTION --- */
+.logo--cont{background-color: #F6F5AE;}
+.logo--cont img{margin: 1em;}
+
+/* --- CONFIRMATION SECTION --- */
+.confirmation--cont h2:first-child{margin-bottom: .5em;}
+
+/* --- ORDERS SECTION --- */
+.orders--cont{display: flex;flex-direction: row;}
+
+.panel{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-right: 1px solid #EBEBEB;
+    padding-bottom: 5em;
+}
+.orders--cont .panel:first-child{border-left: 1px solid #EBEBEB;}
+
+.order--step{
+    width: 100%;
+    height: 50px;
+    background-color: #EBEBEB;
+    color: white;
+    font-size: 2em;
+    font-weight: 500;
+}
+.img--cont{
+    margin: 1.5em;
+    padding: 1.5em;
+    border-radius: 5px;
+    background-color: #EBEBEB;
+    height: 150px;
+}
+
+.img--cont img{padding: 1em;width: 100%;}
+.orders--cont .panel:first-child .img--cont img{padding: 1em 2em;}
+
+/* override: only active panel shall display on mobile */
+
+.processed .order--step,
+.processed .img--cont,
+.processed p:last-child{ opacity: .5; }
+
+.active{display: flex;}
+.active .img--cont, 
+.active .order--step{background-color: #2E86AB;}
+
+.processed, .un_processed{display: none;}
+@media (min-width:768px){
+    .processed, .un_processed{
+        display: flex;
+    }
+}
+
+
+
+/* --- END ORDERS SECTION --- */
+
+/* LOADING GIF */
+.loading{
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    background-color: grey;
+}            
+
+
