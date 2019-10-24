@@ -8,24 +8,25 @@ li.background-image{
         display: grid;
         grid-template-columns: 1fr 1fr;
         z-index: -100;
-        opacity: .5;
-        margin-top: 35%;
+        opacity: .3;
+        margin-top: 30%;
         width: 100%;
         height: auto;
     }
-    .background-image{
+    .background-container li{
         background: url("../assets/background.png");
         background-repeat: no-repeat;
         display: grid;
         grid-auto-columns: 1fr 1fr;
         background-repeat: no-repeat; 
+        background-size: 70%;
     }
-    .background-image:nth-child(odd){
+    .background-container li:nth-child(odd){
         background-position: center top;
     }
-    .background-image:nth-child(even){
+    .background-container li:nth-child(even){
         background-position: left center;
-        margin-top: 50%;
+        margin-top: 90%;
     }
 }
        
