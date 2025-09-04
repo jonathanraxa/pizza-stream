@@ -1,25 +1,39 @@
 /* All styles within the container element, 
     excludes the background image  */
+
 /* --- LOGO SECTION --- */
-.logo--cont{background-color: #F6F5AE;}
-.logo--cont img{margin: 1em;}
+.logo--cont {
+    background-color: #F6F5AE;
+}
+
+.logo--cont img {
+    margin: 1em;
+}
 
 /* --- CONFIRMATION SECTION --- */
-.confirmation--cont h2:first-child{margin-bottom: .5em;}
+.confirmation--cont h2:first-child {
+    margin-bottom: .5em;
+}
 
 /* --- ORDERS SECTION --- */
-.orders--cont{display: flex;flex-direction: row;}
+.orders--cont {
+    display: flex;
+    flex-direction: row;
+}
 
-.panel{
+.panel {
     display: flex;
     flex-direction: column;
     width: 100%;
     border-right: 1px solid #EBEBEB;
     padding-bottom: 5em;
 }
-.orders--cont .panel:first-child{border-left: 1px solid #EBEBEB;}
 
-.order--step{
+.orders--cont .panel:first-child {
+    border-left: 1px solid #EBEBEB;
+}
+
+.order--step {
     width: 100%;
     height: 50px;
     background-color: #EBEBEB;
@@ -27,7 +41,8 @@
     font-size: 2em;
     font-weight: 500;
 }
-.img--cont{
+
+.img--cont {
     margin: 1.5em;
     padding: 1.5em;
     border-radius: 5px;
@@ -35,36 +50,89 @@
     height: 150px;
 }
 
-.img--cont img{padding: 1em;width: 100%;}
-.orders--cont .panel:first-child .img--cont img{padding: 1em 2em;}
+.img--cont img {
+    padding: 1em;
+    width: 100%;
+}
+
+.orders--cont .panel:first-child .img--cont img {
+    padding: 1em 2em;
+}
 
 /* override: only active panel shall display on mobile */
 
 .processed .order--step,
 .processed .img--cont,
-.processed p:last-child{ opacity: .5; }
+.processed p:last-child {
+    opacity: .5;
+}
 
-.active{display: flex;}
-.active .img--cont, 
-.active .order--step{background-color: #2E86AB;}
+.active {
+    display: flex;
+}
 
-.processed, .un_processed{display: none;}
-@media (min-width:768px){
-    .processed, .un_processed{
+.active .img--cont,
+.active .order--step {
+    background-color: #2E86AB;
+}
+
+.processed,
+.un_processed {
+    display: none;
+}
+
+@media (min-width:768px) {
+
+    .processed,
+    .un_processed {
         display: flex;
     }
 }
 
-
-
 /* --- END ORDERS SECTION --- */
 
-/* LOADING GIF */
-.loading{
-    width: 100%;
+/* LOADING */
+/* make text flash slowly   */
+.loading {
     text-align: center;
+    animation: loading 3.2s ease-in-out infinite;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 5px;
+    color: black;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+@keyframes loading {
+    from {
+        opacity: 0;
+    }
+}
+
+/* BUTTON */
+.ps_button {
+    background-color: #2E86AB;
+    color: white;
+    padding: 1em;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5em;
+    font-weight: 500;
+    margin: 1em;
+    width: 100%;
+    max-width: 300px;
     height: 50px;
-    background-color: grey;
-}            
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.hide {
+    display: none;
+}
 
+.show {
+    display: flex;
+}
