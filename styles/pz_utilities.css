@@ -1,51 +1,102 @@
 /* --- UNIVERSAL + UTILITY STYLES --- */
-*{
+* {
     font-family: "Avenir Next";
     margin: 0;
     padding: 0;
     color: #565554;
 }
-body{
+
+body {
     background-color: #DA593F;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 0% 100% 0%;
-    height: 100vh;
+    /* display: grid; */
+    /* grid-template-columns: 0% 100% 0%; */
+    /* height: 100vh; */
 
 }
+
 /* change to single column after 
 side margins significantly narrow */
-@media(min-width: 900px){
-     body{
-        display: grid;
-        grid-template-columns: 15% 70% 15%;
-     }
+@media(min-width: 900px) {
+    body {
+        /* display: grid; */
+        /* grid-template-columns: 15% 100% 15%; */
+    }
 }
 
 /* DISPLAY VISUALS */
-.ps_container{background-color: #FFFFFF;}
-.ps_flex--center{display: flex;justify-content: center;align-items: center;}
-.ps_flex{display: flex;  }
-.ps_flex-direction-col{flex-direction: column;}
-.ps_text-center{text-align: center;}
-.ps_border-top{border-top: 1px solid #EBEBEB;}
-.ps_full-width{width: 100%;}
+.ps_container {
+    background-color: #FFFFFF;
+}
+
+.ps_flex--center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ps_flex {
+    display: flex;
+}
+
+.ps_flex-direction-col {
+    flex-direction: column;
+}
+
+.ps_text-center {
+    text-align: center;
+}
+
+.ps_border-top {
+    border-top: 1px solid #EBEBEB;
+}
+
+.ps_full-width {
+    width: 100%;
+}
 
 /* FONT */
-.ps_font-size-1-5 {font-size: 1.5em;}
-.ps_font-size-2 {font-size: 2em;}
-.ps_font-size-3 {font-size: 3em;}
-.ps_font-weight-500{font-weight: 500;}
-.ps_font-weight-400{font-weight: 400;}
+.ps_font-size-1-5 {
+    font-size: 1.5em;
+}
+
+.ps_font-size-2 {
+    font-size: 2em;
+}
+
+.ps_font-size-3 {
+    font-size: 3em;
+}
+
+.ps_font-weight-500 {
+    font-weight: 500;
+}
+
+.ps_font-weight-400 {
+    font-weight: 400;
+}
 
 /* MARGINS */
-.ps_margin-3{margin: 3em;}
-.ps_margin-2{margin: 2em;}
-.ps_margin-1-5{margin: 1.5em;}
-.ps_margin-1{margin: 1em;}
-.ps_margin-top-2{margin-top: 2em;}
-.ps_margin-top-0-5{margin-top: .5em;}
+.ps_margin-3 {
+    margin: 3em;
+}
 
+.ps_margin-2 {
+    margin: 2em;
+}
 
+.ps_margin-1-5 {
+    margin: 1.5em;
+}
 
-            
+.ps_margin-1 {
+    margin: 1em;
+}
+
+.ps_margin-top-2 {
+    margin-top: 2em;
+}
+
+.ps_margin-top-0-5 {
+    margin-top: .5em;
+}

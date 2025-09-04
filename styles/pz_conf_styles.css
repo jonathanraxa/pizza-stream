@@ -1,6 +1,12 @@
 /* All styles within the container element, 
     excludes the background image  */
 
+.ps_container {
+    height: 100vh;
+    width: 80vw;
+    margin: 0 auto;
+}
+
 /* --- LOGO SECTION --- */
 .logo--cont {
     background-color: #F6F5AE;
@@ -92,7 +98,8 @@
 /* --- END ORDERS SECTION --- */
 
 /* LOADING */
-/* make text flash slowly   */
+
+/* make text flash slowly */
 .loading {
     text-align: center;
     animation: loading 3.2s ease-in-out infinite;
@@ -135,4 +142,14 @@
 
 .show {
     display: flex;
+}
+
+.ps_loading-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    color: black;
+    font-size: 1.5em;
+    font-weight: 500;
 }

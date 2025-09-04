@@ -6,37 +6,18 @@
     <title>Confimration Pizzastream</title>
     <meta name="description" content="Pizzastream Confirmation Order and Expected Arrival">
     <meta name="author" content="Pizzastream">
-
     <link rel="stylesheet" type="text/css" href="styles/pz_utilities.css">
     <link rel="stylesheet" type="text/css" href="styles/pz_conf_styles.css">
     <link rel="stylesheet" type="text/css" href="styles/pz_background_styles.css">
-
-
 </head>
 
 <body>
-
-    <!-- BACKGROUND LEFT SIDE -->
-    <ul class="background-container">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul>
-
     <div class="ps_container ps_flex ps_flex-direction-col">
-
         <header>
             <div class="logo--cont ps_flex--center ps_flex-direction-col">
                 <img class="ps_margin-3" src="assets/logo.png" alt="Pizza by Pizzastream">
             </div>
         </header>
-
-
         <section class="ps_flex--center ps_flex-direction-col ps_margin-3 ps_text-center">
             <button class="ps_button">
                 Order Pizza
@@ -48,12 +29,9 @@
                 </div>
             </div>
         </section>
-
-
-        <main class="orders--cont">
-
+        <section class="orders--cont">
             <!-- PANEL 1 -->
-            <div class="panel ps_flex--center ps_flex-direction-col active">
+            <div class="panel ps_flex--center ps_flex-direction-col un_processed">
                 <div class="order--step ps_flex--center">1</div>
                 <p class="ps_font-weight-500 ps_margin-top-2">Processing your order</p>
                 <div class="img--cont ps_flex--center">
@@ -61,8 +39,6 @@
                 </div>
                 <p class="ps_font-weight-400">Checkin' it twice</p>
             </div>
-
-
             <!-- PANEL 2 -->
             <div class="panel ps_flex--center ps_flex-direction-col un_processed">
                 <div class="order--step ps_flex--center">2</div>
@@ -72,8 +48,6 @@
                 </div>
                 <p class="ps_font-weight-400">Kneadin', shapin', bakin'</p>
             </div>
-
-
             <!-- PANEL 3 -->
             <div class="panel ps_flex--center ps_flex-direction-col un_processed">
                 <div class="order--step ps_flex--center">3</div>
@@ -83,39 +57,18 @@
                 </div>
                 <p class="ps_font-weight-400">Deliverin'</p>
             </div>
-
-        </main>
-
-
-        <section class="ps_border-top">
-            <!-- <img id="loading-img" class="ps_full-width" src="assets/loading.gif" alt="progress bar gif"> -->
-            <div id="loading" class="loading">Pizza Loading...</div>
         </section>
-
+        <section class="ps_loading-cont ps_border-top">
+            <div id="loading" class="ps_font-size-1-5 ps_font-weight-400 loading hide">Pizza Loading...</div>
+        </section>
         <section class="timer--cont ps_flex--center ps_flex-direction-col ps_margin-3 ps_text-center">
             <div id="remaining-time-container">
                 <div id="lead-text" class="ps_font-size-1-5 ps_font-weight-400">It'll take about</div>
                 <div id="remaining-time" class="ps_font-weight-500 ps_font-size-3">60 mintues</div>
             </div>
         </section>
-
     </div>
-
-    <!-- BACKGROUND RIGHT SIDE -->
-    <ul class="background-container">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul>
-
-
-    <!-- TESTING SCRIPT : remove comment to activate -->
-    <script type="text/javascript" src="js/test.js"></script>
+    <script type="text/javascript" src="js/run.js"></script>
 </body>
 
 </html>
